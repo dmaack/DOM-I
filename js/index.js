@@ -41,6 +41,15 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+let navBar = document.querySelectorAll('nav a');
+navBar[0].textContent = siteContent['nav']['nav-item-1'];
+navBar[1].textContent = siteContent['nav']['nav-item-2'];
+navBar[2].textContent = siteContent['nav']['nav-item-3'];
+navBar[3].textContent = siteContent['nav']['nav-item-4'];
+navBar[4].textContent = siteContent['nav']['nav-item-5'];
+navBar[5].textContent = siteContent['nav']['nav-item-6'];
+
+/******************** HEADER ******************/
 let ctaText = document.querySelector('h1')
 ctaText.textContent = siteContent['cta']['h1'];
 
@@ -50,13 +59,24 @@ ctaButton.textContent = siteContent['cta']['button'];
 let cta = document.getElementById("cta-img");
 cta.setAttribute('src', ['../img/header-img.png']);
 
+/******************** MAIN CONTENT ********************/
 let midImg = document.getElementById("middle-img");
 midImg.setAttribute('src', ['../img/mid-page-accent.jpg']);
 
-let navBar = document.querySelectorAll('nav a');
-navBar[0].textContent = siteContent['nav']['nav-item-1'];
-navBar[1].textContent = siteContent['nav']['nav-item-2'];
-navBar[2].textContent = siteContent['nav']['nav-item-3'];
-navBar[3].textContent = siteContent['nav']['nav-item-4'];
-navBar[4].textContent = siteContent['nav']['nav-item-5'];
-navBar[5].textContent = siteContent['nav']['nav-item-6'];
+let h4Content = document.querySelectorAll('h4');
+h4Content[0].textContent = siteContent['main-content']['features-h4'];
+h4Content[1].textContent = siteContent['main-content']['about-h4'];
+h4Content[2].textContent = siteContent['main-content']['services-h4'];
+h4Content[3].textContent = siteContent['main-content']['product-h4'];
+h4Content[4].textContent = siteContent['main-content']['vision-h4'];
+
+
+let pContent = document.querySelectorAll('p');
+pContent[0].textContent = siteContent['main-content']['features-content'];
+pContent[1].textContent = siteContent['main-content']['about-content'];
+pContent[2].textContent = siteContent['main-content']['services-content'];
+pContent[3].textContent = siteContent['main-content']['product-content'];
+pContent[4].textContent = siteContent['main-content']['vision-content'];
+
+
+/************************ FOOTER ******************************/
