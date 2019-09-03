@@ -80,3 +80,15 @@ pContent[4].textContent = siteContent['main-content']['vision-content'];
 
 
 /************************ FOOTER ******************************/
+
+let contactContent = document.querySelector('.contact h4');
+contactContent.textContent = siteContent['contact']['contact-h4'];
+
+let contactInfo = document.querySelectorAll('.contact p');
+contactInfo[0].textContent = siteContent['contact']['address'];
+contactInfo[1].textContent = siteContent['contact']['phone'];
+contactInfo[2].textContent = siteContent['contact']['email'];
+
+
+let footerInfo = document.querySelector('footer');
+footerInfo.textContent = siteContent['footer']['copyright'];
